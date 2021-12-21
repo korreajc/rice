@@ -1,21 +1,21 @@
 import './style.css';
-import contactForm from './contact.js'
-import menuForm from './menu.js'
-import {setBackgroundImage}  from './practice.js';
 import {buttonMaker}  from './practice.js';
 import {setTitle} from './practice.js';
 import {buttons} from './index.js'
-
+import{cloudMaker} from './practice.js'
+import {layout} from './practice.js'
+import { mainFunctions } from './mainpageFunctions';
 
 function mainPage(){
- 
     //content = div in template
-    let titleName = "Casa Flores Mexican Restaurant";
-    setBackgroundImage();
+    let titleName = "Rice Dreams";
+    layout();
+    cloudMaker()
     buttonMaker();
     setTitle(titleName);
     buttons();
-   
+    mainFunctions();
+    
 }
 
 

@@ -10,20 +10,37 @@ function deletePage(){
     oldDiv.remove();
 }
 
-function buttonMaker(){
+function cloudMaker(){
+    const cloud = document.createElement("div")
+    cloud.setAttribute("id", "cloudy")
+    cloud.classList.add("cloud")
+    const contentDiv = document.getElementById("head")
+    contentDiv.appendChild(cloud);
+
+}
+
+function layout(){
     const contentDiv = document.getElementById("content")
     const mainDiv = document.createElement("div");
     const headerDiv = document.createElement("div");
-    const titles = document.createElement("div");
+
+    mainDiv.setAttribute("id", "main")
+    headerDiv.setAttribute("id", "head")
+
+    mainDiv.appendChild(headerDiv);
+    contentDiv.appendChild(mainDiv);
+
+}
+
+function buttonMaker(){
+    const contentDiv = document.getElementById("content")
+    const mainDiv = document.getElementById("main");
+    const headerDiv = document.getElementById("head");
 
     const buttonDiv = document.createElement("div");
     const homeBtn = document.createElement("button");
     const menuBtn = document.createElement("button");
     const contactBtn = document.createElement("button");
-
-    mainDiv.setAttribute("id", "main")
-    headerDiv.setAttribute("id", "head")
-    titles.setAttribute("id", "title")
 
     buttonDiv.setAttribute("id", "buttons")
     homeBtn.classList.add("btn")
@@ -37,14 +54,11 @@ function buttonMaker(){
     menuBtn.innerHTML = "Menu"
     
     contactBtn.innerHTML = "Contact"
-
     
     buttonDiv.appendChild(homeBtn)
     buttonDiv.appendChild(menuBtn)
     buttonDiv.appendChild(contactBtn)
-    headerDiv.appendChild(titles);
-    headerDiv.appendChild(buttonDiv)
-    mainDiv.appendChild(headerDiv);
+    mainDiv.appendChild(buttonDiv);
     contentDiv.appendChild(mainDiv);
 
 }
@@ -56,9 +70,15 @@ function setBackgroundImage(){
     document.body.appendChild(myIcon)
 }
 
+
 function setTitle(titleName){
-    const titles = document.getElementById("title");
-    titles.innerHTML = titleName;
+    const cloud = document.getElementById("head")
+    const title = document.createElement("div")
+    title.setAttribute("id", "title")
+    title.innerHTML = titleName;
+    cloud.appendChild(title)
 }
 
-export{deletePage, buttonMaker, setBackgroundImage, setTitle}
+
+
+export{ layout, cloudMaker, deletePage, buttonMaker, setBackgroundImage, setTitle}

@@ -6,7 +6,9 @@ import {buttonMaker}  from './practice.js';
 import {setTitle} from './practice.js';
 import {deletePage} from './practice.js';
 import {buttons} from './index.js'
-
+import{cloudMaker} from './practice.js'
+import {layout} from './practice.js'
+import {infoForm} from './contactFunctions.js'
 
 
 function contactForm(){
@@ -14,10 +16,12 @@ function contactForm(){
     //append to body
     let titleName = "Contact";
     deletePage();
-    setBackgroundImage();
+    layout();
+    cloudMaker()
     buttonMaker();
     setTitle(titleName);
     buttons();
+    infoForm()
 
     
 }
