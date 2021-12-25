@@ -1,4 +1,4 @@
-import './style.css';
+import '/src/style.css';
 import {buttonMaker}  from './practice.js';
 import {setTitle} from './practice.js';
 import {deletePage} from './practice.js';
@@ -7,12 +7,12 @@ import{cloudMaker} from './practice.js'
 import {layout} from './practice.js'
 import {menuMaker} from './menuFunctions.js'
 import {menuItem} from './menuFunctions.js'
-import Icon from './katsu.jpeg';
-import Roll from './roll.jpeg'
-import ComboPlate from './comboplate.jpeg'
-import CreamRoll from './creamroll.jpeg'
-import EbiRoll from './ebiroll.jpeg'
-import UwuRoll from './uwuroll.jpeg'
+import Icon from '/src/images/katsu.jpeg';
+import Roll from '/src/images/roll.jpeg'
+import ComboPlate from '/src/images/comboplate.jpeg'
+import CreamRoll from '/src/images/creamroll.jpeg'
+import EbiRoll from '/src/images/ebiroll.jpeg'
+import UwuRoll from '/src/images/uwuroll.jpeg'
 
 
 function menuForm(){

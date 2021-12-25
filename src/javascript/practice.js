@@ -1,8 +1,5 @@
-import Icon from './clouds.jpeg';
-import contactForm from './contact';
-import menuForm  from './menu';
-import './style.css';
-import { mainPage } from './mainpage.js';
+import Icon from '/src/images/clouds.jpeg';
+import '/src/style.css';
 
 
 function deletePage(){

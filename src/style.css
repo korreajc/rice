@@ -1,27 +1,27 @@
 @font-face {
     font-family: 'Yellowtail-Regular';
-    src: url('./Yellowtail-Regular.ttf');
+    src: url('./fonts/Yellowtail-Regular.ttf');
     font-weight: 600;
     font-style: normal;
   }
 
 @font-face {
     font-family: 'Roboto-BoldItalic';
-    src: url('./Roboto/Roboto-Bold.ttf');
+    src: url('./fonts/Roboto/Roboto-Bold.ttf');
     font-weight: 500;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Fredoka-One';
-    src: url('./FredokaOne-Regular.ttf');
+    src: url('./fonts/FredokaOne-Regular.ttf');
     font-weight: 500;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Pushter-Regular';
-    src: url('./Pushster-Regular.ttf');
+    src: url('./fonts/Pushster-Regular.ttf');
     font-weight: 500;
     font-style: normal;
   }

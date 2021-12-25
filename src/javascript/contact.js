@@ -1,7 +1,4 @@
-import './style.css';
-import { mainPage } from './mainpage.js';
-import menuForm from './menu.js'
-import {setBackgroundImage}  from './practice.js';
+import '/src/style.css';
 import {buttonMaker}  from './practice.js';
 import {setTitle} from './practice.js';
 import {deletePage} from './practice.js';
@@ -18,6 +15,7 @@ function contactForm(){
     deletePage();
     layout();
     cloudMaker()
+    
     buttonMaker();
     setTitle(titleName);
     buttons();

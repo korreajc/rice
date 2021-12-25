@@ -1,5 +1,4 @@
-import './style.css';
-import Icon from './katsu.jpeg';
+import '/src/style.css';
 
 
 function menuMaker(){

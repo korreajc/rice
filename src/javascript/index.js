@@ -1,7 +1,6 @@
 import { mainPage } from './mainpage.js';
 import contactForm from './contact.js'
 import menuForm from './menu.js'
-import Icon from './clouds.jpeg';
 
 
 (function (){

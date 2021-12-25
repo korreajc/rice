@@ -1,4 +1,4 @@
-import Icon from './streetpic.jpeg';
+import Icon from '/src/images/streetpic.jpeg';
 
 function mainFunctions(){
     const main = document.getElementById("main")
